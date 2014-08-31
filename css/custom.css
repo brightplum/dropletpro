@@ -1,0 +1,61 @@
+h1#logo {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+}
+
+#wrapper {
+    height: 75%;
+}
+
+.hero h2 {
+    font-size: 1.8em;
+}
+
+.center {
+    text-align: center;
+}
+
+.steps {
+    font-size: 1.4em;
+    line-height: 1.6em;
+}
+
+.icon-screen-email,
+.icon-screen-shield,
+.icon-screen-checklist,
+.icon-screen-question,
+.icon-screen-thumbsup,
+.icon-screen-rocket {
+    font-family: 'Simple-Line-Icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon-screen-email:before {
+    content: "\e01f";
+}
+
+.icon-screen-rocket:before {
+    content: "\e05c";
+}
+
+.icon-screen-shield:before {
+    content: "\e00e";
+}
+
+.icon-screen-checklist:before {
+    content: "\e067";
+}
+
+.icon-screen-question:before {
+    content: "\e08b";
+}
+
+.icon-screen-thumbsup:before {
+    content: "\e068";
+}
