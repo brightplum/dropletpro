@@ -16,14 +16,14 @@ $app->container->singleton('twig', function ($devmode) {
   $twig = new \Slim\Views\Twig();
 
   // Set options
-  if (!$devmode) {
+  if ($devmode) {
     $options = array(
-      'cache' => '../cache'
+      'debug' => TRUE,
     );
   }
   else {
     $options = array(
-      'debug' => TRUE,
+      'cache' => '../cache'
     );
   }
 
