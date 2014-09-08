@@ -20,6 +20,8 @@ h1#logo {
     line-height: 1.6em;
 }
 
+.wrapper-page { background: none; }
+
 .icon-screen-email,
 .icon-screen-shield,
 .icon-screen-checklist,
