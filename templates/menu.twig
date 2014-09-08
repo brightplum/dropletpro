@@ -16,9 +16,14 @@
                     <ul>
                         <li><a href="#pricing">Pricing</a></li>
                         <li><a href="#faq">F.A.Q.</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
+                <script type="text/javascript">
+                    mixpanel.track_links("#menu a", "click nav link", {
+                        "referrer": document.referrer
+                    });
+                </script>
                 <!-- End Menu -->
 
             </div>
