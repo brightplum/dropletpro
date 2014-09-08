@@ -1,5 +1,4 @@
-box: wercker/default
-no-response-default: 25
+box: wercker/php
 deploy:
     steps:
         - add-to-known_hosts:
@@ -16,3 +15,7 @@ deploy:
             directory: /var/www/dropletpro
             sshkey: $PRIVATEKEY_PATH
             user: root
+        - script:
+            name: update dependencies
+            code: |-
+                composer update --no-interaction
