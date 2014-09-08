@@ -17,16 +17,17 @@ $app->container->singleton('twig', function ($devmode) {
 
   // Set options
   if (!$devmode) {
-    $twig->parserOptions = array(
+    $options = array(
       'cache' => '../cache'
     );
   }
-
-  if ($devmode) {
-    $twig->parserOptions = array(
+  else {
+    $options = array(
       'debug' => TRUE,
     );
   }
+
+  $twig->parserOptions = $options;
 
   // Add Twig extension
   $twig->parserExtensions = array(
@@ -41,8 +42,12 @@ $app->container->singleton('twig', function ($devmode) {
 
 // Set routes
 $app->get('/', function () use ($app) {
-  $app->twig->display('front.twig');
+  $app->twig->display('front.twig', array('front' => TRUE));
 })->name('front');
+
+$app->get('/pricing', function () use ($app) {
+  $app->twig->display('page.twig', array('title' => 'Pricing'));
+})->name('pricing');
 
 $app->run();
 

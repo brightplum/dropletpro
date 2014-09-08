@@ -2,38 +2,7 @@
 
 <div id="wrapper">
 
-    <!-- Start Header -->
-
-    <div id="header">
-
-        <div class="container">
-            <div class="row">
-                <div class="span12">
-
-                    <h1 id="logo">
-                        <a href="/">DropletPro</a>
-                    </h1>
-                    <h2 class="menulink"><a href="#">Menu</a></h2>
-
-                    <!-- Start Menu -->
-                    <div id="menu">
-                        <ul>
-                            <li><a href="#pricing">Pricing</a></li>
-                            <li><a href="#faq">F.A.Q.</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <!-- End Menu -->
-
-                </div>
-                <div class="clearfix"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- End Header -->
+    {% include 'menu.twig' %}
 
     <!-- Start Content -->
 
@@ -444,18 +413,4 @@
 
 <div class="clearfix"></div>
 
-<div id="footer">
-
-    <p>
-        <a href="#"><span class="glyph-item mega icon-social-twitter" aria-hidden="true"></span></a>
-        <a href="#"><span class="glyph-item mega icon-social-facebook" aria-hidden="true"></span></a>
-    </p>
-
-    Copyright &copy; 2014
-
-    <div class="clearfix"></div>
-
-</div>
-
 {% include 'footer.twig' %}
-
