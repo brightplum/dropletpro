@@ -1,0 +1,19 @@
+{
+  "name": "brightplum/dropletpro",
+  "description": "The main landing page for dropletpro.com",
+  "keywords": ["drupal", "help"],
+  "homepage": "http://dropletpro.com",
+  "authors": [
+    {
+      "name": "Fredric Mitchell",
+      "email": "fredric@brightplum.com",
+      "homepage": "http://brightplum.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "slim/slim": "2.*",
+    "slim/views": "0.1.*",
+    "twig/twig": "1.*"
+  }
+}
